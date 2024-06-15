@@ -1,0 +1,15 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: ServiceEntry
+metadata:
+  name: pg-external
+spec:
+  hosts:
+  - test.com
+  addresses:
+  - 10.2.0.
+  ports:
+  - name: tcp
+    number: 5432
+    protocol: tcp
+  resolution: STATIC
+  location: MESH_EXTERNAL

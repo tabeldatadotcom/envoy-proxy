@@ -1,0 +1,5 @@
+server:
+  port: ${SERVER_PORT:8081}
+
+demo1:
+  url: ${DEMO2_URL:http://localhost:8080}
